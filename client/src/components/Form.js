@@ -31,7 +31,7 @@ const Form = () => {
     if (fullname && email && age) {
       if (age >= 18 && age <= 65) {
         try {
-          const res = await axios.post('http://localhost:5000/api/submitForm', {
+          const res = await axios.post('https://yoga-admission-v1a2.onrender.com/api/submitForm', {
             email,
             username: fullname,
             age,
